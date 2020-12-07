@@ -10,16 +10,17 @@ export default props => {
     }, [props.id])
     return (
         <div className="row d-flex justify-content-center my-4">
-            <div class="card text-left">
-                <div class="card-body">
-                    <h4 class="card-title">Title: {product.title}</h4>
-                    <div class="card-text">
+            <div className="card text-left">
+                <div className="card-body">
+                    <h4 className="card-title">{product.title}</h4>
+                    <div className="card-text">
                         <p>Price: {product.price}$</p>
                         <p>Description: {product.desc}</p>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <Link to="/" >Go to Home</Link>
+                <div className="card-footer btn-group">
+                    <Link className="btn btn-outline-secondary my-2" to="/" >Go to Home</Link>
+                    <Link className="btn btn-outline-secondary my-2" to={`/${product._id}/update`} >Go to Update</Link>
                 </div>
             </div>
         </div>

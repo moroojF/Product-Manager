@@ -5,7 +5,9 @@ export default props => {
     return (
         <div>
             {props.products.map((product) => {
-                return <p key={product._id}><Link to={`/${product._id}`} > { product.title }</Link></p>
+                return <div key={product._id}> 
+                <Link to={`/${product._id}`} > { product.title }</Link>
+                </div>
             })}
         </div >
     )
