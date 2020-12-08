@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AddForm = props => {
     const { initialTitle, initialPrice, initialDesc, onSubmitProp, action } = props;
-    console.log(props);
     const [title, setTitle] = useState(initialTitle);
     const [price, setPrice] = useState(initialPrice);
     const [desc, setDesc] = useState(initialDesc);

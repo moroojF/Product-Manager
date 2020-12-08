@@ -4,7 +4,6 @@ import axios from 'axios';
 import AddForm from '../components/AddForm';
 
 export default props => {
-    console.log(props);
     const [product, setProduct] = useState({});
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
